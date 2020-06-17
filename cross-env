@@ -1,0 +1,132 @@
+ ERROR  Failed to compile with 2 errors2:18:33 PM
+
+ error  in ./resources/sass/app.scss
+
+Module build failed (from ./node_modules/css-loader/index.js):
+ModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+SassError: Can't find stylesheet to import.
+  ╷
+8 │ @import '~bootstrap/scss/bootstrap';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+  C:\xampp\htdocs\blog\resources\sass\app.scss 8:9  root stylesheet
+    at C:\xampp\htdocs\blog\node_modules\webpack\lib\NormalModule.js:316:20
+    at C:\xampp\htdocs\blog\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+    at C:\xampp\htdocs\blog\node_modules\loader-runner\lib\LoaderRunner.js:233:18
+    at context.callback (C:\xampp\htdocs\blog\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+    at C:\xampp\htdocs\blog\node_modules\sass-loader\dist\index.js:73:7
+    at Function.call$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:88459:16)
+    at _render_closure1.call$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:77851:12)
+    at _RootZone.runBinary$3$3 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:26320:18)
+    at _RootZone.runBinary$3 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:26324:19)
+    at _FutureListener.handleError$1 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24768:19)
+    at _Future__propagateToListeners_handleError.call$0 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:25065:40)
+    at Object._Future__propagateToListeners (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:4311:88)
+    at _Future._completeError$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24893:9)
+    at _AsyncAwaitCompleter.completeError$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24285:12)
+    at Object._asyncRethrow (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:4065:17)
+    at C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:14183:20
+    at _wrapJsFunctionForAsync_closure.$protected (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:4090:15)
+    at _wrapJsFunctionForAsync_closure.call$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24306:12)
+    at _awaitOnObject_closure0.call$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24298:25)
+    at _RootZone.runBinary$3$3 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:26320:18)
+    at _RootZone.runBinary$3 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:26324:19)
+    at _FutureListener.handleError$1 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24768:19)
+    at _Future__propagateToListeners_handleError.call$0 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:25065:40)
+    at Object._Future__propagateToListeners (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:4311:88)
+    at _Future._completeError$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24893:9)
+    at _AsyncAwaitCompleter.completeError$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24285:12)
+    at Object._asyncRethrow (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:4065:17)
+    at C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:16818:20
+    at _wrapJsFunctionForAsync_closure.$protected (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:4090:15)
+    at _wrapJsFunctionForAsync_closure.call$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24306:12)
+    at _awaitOnObject_closure0.call$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24298:25)
+    at _RootZone.runBinary$3$3 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:26320:18)
+    at _RootZone.runBinary$3 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:26324:19)
+    at _FutureListener.handleError$1 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24768:19)
+    at _Future__propagateToListeners_handleError.call$0 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:25065:40)
+    at Object._Future__propagateToListeners (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:4311:88)
+
+ error  in ./resources/sass/app.scss
+
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+SassError: Can't find stylesheet to import.
+  ╷
+8 │ @import '~bootstrap/scss/bootstrap';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+  C:\xampp\htdocs\blog\resources\sass\app.scss 8:9  root stylesheet
+
+ @ ./resources/sass/app.scss 2:14-253
+
+     Asset      Size   Chunks             Chunk Names
+/js/app.js  1.78 MiB  /js/app  [emitted]  /js/app
+
+WARNING in ./resources/js/bootstrap.js
+Module not found: Error: Can't resolve 'bootstrap' in 'C:\xampp\htdocs\blog\resources\js'
+ @ ./resources/js/bootstrap.js
+ @ ./resources/js/app.js
+ @ multi ./resources/js/app.js ./resources/sass/app.scss
+
+WARNING in ./resources/js/bootstrap.js
+Module not found: Error: Can't resolve 'popper.js' in 'C:\xampp\htdocs\blog\resources\js'
+ @ ./resources/js/bootstrap.js
+ @ ./resources/js/app.js
+ @ multi ./resources/js/app.js ./resources/sass/app.scss
+
+ERROR in ./resources/sass/app.scss
+Module build failed (from ./node_modules/css-loader/index.js):
+ModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+SassError: Can't find stylesheet to import.
+  ╷
+8 │ @import '~bootstrap/scss/bootstrap';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+  C:\xampp\htdocs\blog\resources\sass\app.scss 8:9  root stylesheet
+    at C:\xampp\htdocs\blog\node_modules\webpack\lib\NormalModule.js:316:20
+    at C:\xampp\htdocs\blog\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+    at C:\xampp\htdocs\blog\node_modules\loader-runner\lib\LoaderRunner.js:233:18
+    at context.callback (C:\xampp\htdocs\blog\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+    at C:\xampp\htdocs\blog\node_modules\sass-loader\dist\index.js:73:7
+    at Function.call$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:88459:16)
+    at _render_closure1.call$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:77851:12)
+    at _RootZone.runBinary$3$3 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:26320:18)
+    at _RootZone.runBinary$3 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:26324:19)
+    at _FutureListener.handleError$1 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24768:19)
+    at _Future__propagateToListeners_handleError.call$0 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:25065:40)
+    at Object._Future__propagateToListeners (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:4311:88)
+    at _Future._completeError$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24893:9)
+    at _AsyncAwaitCompleter.completeError$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24285:12)
+    at Object._asyncRethrow (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:4065:17)
+    at C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:14183:20
+    at _wrapJsFunctionForAsync_closure.$protected (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:4090:15)
+    at _wrapJsFunctionForAsync_closure.call$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24306:12)
+    at _awaitOnObject_closure0.call$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24298:25)
+    at _RootZone.runBinary$3$3 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:26320:18)
+    at _RootZone.runBinary$3 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:26324:19)
+    at _FutureListener.handleError$1 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24768:19)
+    at _Future__propagateToListeners_handleError.call$0 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:25065:40)
+    at Object._Future__propagateToListeners (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:4311:88)
+    at _Future._completeError$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24893:9)
+    at _AsyncAwaitCompleter.completeError$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24285:12)
+    at Object._asyncRethrow (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:4065:17)
+    at C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:16818:20
+    at _wrapJsFunctionForAsync_closure.$protected (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:4090:15)
+    at _wrapJsFunctionForAsync_closure.call$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24306:12)
+    at _awaitOnObject_closure0.call$2 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24298:25)
+    at _RootZone.runBinary$3$3 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:26320:18)
+    at _RootZone.runBinary$3 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:26324:19)
+    at _FutureListener.handleError$1 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:24768:19)
+    at _Future__propagateToListeners_handleError.call$0 (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:25065:40)
+    at Object._Future__propagateToListeners (C:\xampp\htdocs\blog\node_modules\sass\sass.dart.js:4311:88)
+ @ ./resources/sass/app.scss
+
+ERROR in ./resources/sass/app.scss (./node_modules/css-loader??ref--5-2!./node_modules/postcss-loader/src??postcss0!./node_modules/resolve-url-loader??ref--5-4!./node_modules/sass-loader/dist/cjs.js??ref--5-5!./resources/sass/app.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+SassError: Can't find stylesheet to import.
+  ╷
+8 │ @import '~bootstrap/scss/bootstrap';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+  C:\xampp\htdocs\blog\resources\sass\app.scss 8:9  root stylesheet
+ @ ./resources/sass/app.scss 2:14-253
